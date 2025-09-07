@@ -1,0 +1,98 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 0;
+
+  /* Background image */
+  background-image: url('Light/back.jpeg');
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+  background-attachment: fixed;  
+}
+
+
+header {
+  background: #2980b9;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.hotel-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hotel-section h2 {
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.hotel-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hotel-card {
+  position: relative;
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.hotel-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: white;
+  padding: 15px;
+}
+
+.hotel-overlay h3 {
+  margin: 0 0 5px;
+}
+
+.hotel-overlay p {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.hotel-overlay a {
+  display: inline-block;
+  background: #f39c12;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.hotel-overlay a:hover {
+  background: #e67e22;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+}
